@@ -1,0 +1,53 @@
+body {
+    display: flex;
+    flex-direction: column;
+	width: 100%;
+	min-height: 100vh;
+}
+
+header {
+	display: flex;
+	flex-diretion: row;
+	justify-content: center;
+	align-items: center;
+}
+
+nav {
+	display: flex;
+	flex-diretion: row;
+	justify-content: center;
+	align-content: space-around;
+}
+
+content {
+	flex: 1;
+	display: flex;
+	flex-diretion: row;
+}
+
+main {
+	
+}
+
+footer {
+	display: flex;
+	flex-direction: row;
+	align-content: space-between;
+}
+
+/* For SAMSUNG GS7 */
+@media screen 
+  and (device-width: 360px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 4) 
+  and (orientation: portrait) {
+	
+	nav {
+		flex-direction: column;
+	}
+
+	aside {
+		display: none;
+	}
+
+}

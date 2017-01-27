@@ -1,8 +1,14 @@
+html, body {
+    margin: 0px;
+    padding: 0px;
+}
+
 body {
     display: flex;
     flex-direction: column;
 	width: 100%;
-	min-height: 100vh;
+	min-height: 98vh;
+    font-family: 'Roboto', sans-serif;
 }
 
 header {
@@ -10,29 +16,82 @@ header {
 	flex-diretion: row;
 	justify-content: center;
 	align-items: center;
+    height: 18vh;
+    color: #fff;
+    background-color: #673ab7;
+    font-size: 48px;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header a:hover {
+    font-weight: bold;
 }
 
 nav {
 	display: flex;
 	flex-diretion: row;
-	justify-content: center;
-	align-content: space-around;
+	justify-content: space-around;
+	align-items: center;
+    height: 8vh;
+    background-color: #b39ddb;
+    font-size: 32px;
+    padding-bottom: 2px;
+}
+
+nav div {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 1s;
+    line-height: 8vh;
+}
+
+nav a:hover {
+    color: #673ab7;
+}
+
+.selected {
+    border-bottom: 4px solid white;
 }
 
 content {
-	flex: 1;
+	flex: 1 0;
 	display: flex;
-	flex-diretion: row;
+    flex-diretion: row;
+    font-size: 16px;
 }
 
 main {
-	
+    display:flex;
+    flex-direction:row;
+    flex-grow: 6;
+}
+
+aside {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    flex-grow: 0;
+    background-color: #fafafa;
+    border: medium dashed red;
 }
 
 footer {
 	display: flex;
 	flex-direction: row;
 	align-content: space-between;
+    border-top: medium solid #b39ddb;
+}
+
+footer pre {
+    font-size: 12px;
 }
 
 /* For SAMSUNG GS7 */
